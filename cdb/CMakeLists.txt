@@ -25,7 +25,14 @@ target_include_directories(aliroot-lite-cdb
             $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
 set_property(TARGET aliroot-lite-cdb PROPERTY PUBLIC_HEADER 
-AliCDBManager.h)
+  AliCDBEntry.h
+  AliCDBId.h
+  AliCDBManager.h
+  AliCDBMetaData.h
+  AliCDBPath.h 
+  AliCDBRunRange.h
+  AliGRPObject.h
+  )
 
 target_link_libraries(aliroot-lite-cdb PUBLIC ROOT::XMLParser 
                                                ROOT::Matrix 
@@ -50,4 +57,4 @@ root_generate_dictionary(G__AliRootLitecdb
                          aliroot-lite-cdb-linkdef.h
   MODULE aliroot-lite-cdb)
 
-install(TARGETS aliroot-lite-cdb)
+install(TARGETS aliroot-lite-cdb EXPORT aliroot-lite)

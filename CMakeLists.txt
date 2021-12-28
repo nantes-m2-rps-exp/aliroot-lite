@@ -25,3 +25,10 @@ add_subdirectory(cdb)
 add_subdirectory(ana-base)
 add_subdirectory(ana-alice)
 add_subdirectory(stat)
+
+install(EXPORT aliroot-lite
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/aliroot-lite
+        FILE aliroot-lite.cmake)
+
+install(FILES aliroot-lite-config.cmake
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/aliroot-lite)

@@ -113,11 +113,13 @@ set_property(TARGET aliroot-lite-base PROPERTY PUBLIC_HEADER
   AliCentrality.h
   AliCheb3DCalc.h
   AliCodeTimer.h
+  AliCollisionGeometry.h
   AliCounterCollection.h
   AliDAQ.h
   AliDataFile.h
   AliDetectorEventHeader.h
   AliDetectorPID.h
+  AliEMCALPIDResponse.h
   AliEventplane.h
   AliExternalTrackParam.h
   AliFileUtilities.h
@@ -127,8 +129,10 @@ set_property(TARGET aliroot-lite-base PROPERTY PUBLIC_HEADER
   AliGenDPMjetEventHeader.h
   AliGenPythiaEventHeader.h
   AliHMPIDPIDParams.h
+  AliHMPIDPIDResponse.h
   AliHeader.h
   AliITSPidParams.h
+  AliITSPIDResponse.h
   AliInputEventHandler.h
   AliLog.h
   AliMCEvent.h
@@ -145,6 +149,7 @@ set_property(TARGET aliroot-lite-base PROPERTY PUBLIC_HEADER
   AliOADBContainer.h
   AliPDG.h
   AliPID.h
+  AliPIDResponse.h
   AliPIDValues.h
   AliProdInfo.h
   AliRefArray.h
@@ -153,12 +158,15 @@ set_property(TARGET aliroot-lite-base PROPERTY PUBLIC_HEADER
   AliSysInfo.h
   AliTOFHeader.h
   AliTOFPIDParams.h
+  AliTOFPIDResponse.h
   AliTOFTriggerMask.h
   AliTPCdEdxInfo.h
+  AliTPCPIDResponse.h
   AliTrackReference.h
   AliTRDNDFast.h
   AliTRDPIDParams.h
   AliTRDPIDReference.h
+  AliTRDPIDResponse.h
   AliTRDPIDResponseObject.h
   AliTRDdEdxParams.h
   AliTimeStamp.h
@@ -270,5 +278,5 @@ root_generate_dictionary(G__AliRootLiteBase
                          aliroot-lite-base-linkdef.h
   MODULE aliroot-lite-base)
  
-install(TARGETS aliroot-lite-base)
+install(TARGETS aliroot-lite-base EXPORT aliroot-lite)
 

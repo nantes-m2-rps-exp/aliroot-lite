@@ -30,5 +30,5 @@ root_generate_dictionary(G__AliRootLitestat
                          aliroot-lite-stat-linkdef.h
   MODULE aliroot-lite-stat)
  
-install(TARGETS aliroot-lite-stat)
+install(TARGETS aliroot-lite-stat EXPORT aliroot-lite)
 

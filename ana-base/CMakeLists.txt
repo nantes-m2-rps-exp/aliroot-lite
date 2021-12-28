@@ -45,5 +45,5 @@ root_generate_dictionary(G__AliRootLiteAnaBase
                          aliroot-lite-ana-base-linkdef.h
   MODULE aliroot-lite-ana-base)
  
-install(TARGETS aliroot-lite-ana-base)
+install(TARGETS aliroot-lite-ana-base EXPORT aliroot-lite)
 

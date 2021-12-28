@@ -18,6 +18,8 @@ target_include_directories(aliroot-lite-steer
             $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
 set_property(TARGET aliroot-lite-steer PROPERTY PUBLIC_HEADER 
+  AliLHCData.h
+  AliLHCDipValT.h
   AliTriggerRunScalers.h
 )
 
@@ -30,5 +32,5 @@ root_generate_dictionary(G__AliRootLiteSteer
                          aliroot-lite-steer-linkdef.h
   MODULE aliroot-lite-steer)
  
-install(TARGETS aliroot-lite-steer)
+install(TARGETS aliroot-lite-steer EXPORT aliroot-lite)
 

@@ -89,6 +89,7 @@ target_include_directories(aliroot-lite-esd
             $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
 set_property(TARGET aliroot-lite-esd PROPERTY PUBLIC_HEADER 
+  AliCascadeVertexer.h
   AliDetectorRecoParam.h
   AliESD.h
   AliESDACORDE.h
@@ -151,6 +152,7 @@ set_property(TARGET aliroot-lite-esd PROPERTY PUBLIC_HEADER
   AliTriggerScalersESD.h
   AliTriggerScalersRecordESD.h
   AliV0HypSel.h
+  AliV0vertexer.h
   AliVertex.h
   AliVertexerTracks.h
 )
@@ -213,5 +215,5 @@ root_generate_dictionary(G__AliRootLiteesd
                          aliroot-lite-esd-linkdef.h
   MODULE aliroot-lite-esd)
  
-install(TARGETS aliroot-lite-esd)
+install(TARGETS aliroot-lite-esd EXPORT aliroot-lite)
 

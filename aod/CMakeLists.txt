@@ -118,5 +118,5 @@ root_generate_dictionary(G__AliRootLiteaod
                          aliroot-lite-aod-linkdef.h
   MODULE aliroot-lite-aod)
  
-install(TARGETS aliroot-lite-aod)
+install(TARGETS aliroot-lite-aod EXPORT aliroot-lite)
 
